@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFS Visualizer</title>
+    <link rel="stylesheet" href="Bfs.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Breadth-First Search Visualizer</h1>
+        <p>Visualize the Breadth-First Search algorithm step by step.</p>
+        <div id="graph-container">
+            <svg id="graph-svg"></svg>
+            <div id="nodes-container"></div>
+        </div>
+        <div class="controls">
+            <button onclick="startBFS()">Start BFS</button>
+            <button onclick="resetGraph()">Reset Graph</button>
+        </div>
+        <p id="message"></p>
+    </div>
+    <script src="Bfs.js"></script>
+</body>
+</html>

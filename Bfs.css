@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e3f2fd;
+    color: #1a237e;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    border: 2px solid #90caf9;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    margin-bottom: 10px;
+    color: #0d47a1;
+  }
+  
+  #graph-container {
+    position: relative;
+    margin: 20px auto;
+    width: 500px;
+    height: 400px;
+  }
+  
+  #graph-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #nodes-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .node {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 2px solid #90caf9;
+    background-color: #e3f2fd;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #1a237e;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .node.visited {
+    background-color: #1976d2;
+    color: white;
+    transform: scale(1.2);
+  }
+  
+  .node.start {
+    background-color: #43a047;
+    color: white;
+  }
+  
+  .controls {
+    margin: 15px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  button {
+    background-color: #1e88e5;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #1565c0;
+  }
+  
+  #message {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #0d47a1;
+  }

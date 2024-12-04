@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DFS Visualizer</title>
+    <link rel="stylesheet" href="Dfs.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Depth-First Search Visualizer</h1>
+        <p>Visualize the Depth-First Search algorithm step by step.</p>
+        <div id="graph-container">
+            <svg id="graph-svg"></svg>
+            <div id="nodes-container"></div>
+        </div>
+        <div class="controls">
+            <button onclick="startDFS()">Start DFS</button>
+            <button onclick="resetGraph()">Reset Graph</button>
+        </div>
+        <p id="message"></p>
+    </div>
+    <script src="Dfs.js"></script>
+</body>
+</html>

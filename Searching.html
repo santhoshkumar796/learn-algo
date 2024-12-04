@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search Algorithm</title>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link rel="stylesheet" href="Searching.css">
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+            rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container mb-sm-5">
+            <div class="header mt-4">
+                <h1>Searching <span>Algorithm</span></h1>
+                <p class="subheading">Visualize and understand various searching
+                    techniques step-by-step.</p>
+            </div>
+            <div class="container">
+                <div class="row algorithm-section p-5 mt-5 bg-body-secondary">
+                    <div class="col-md-6 d-none d-lg-block">
+                        <img src="./assests/Binarysearch.png"
+                            alt="Binary Search Image" class="image_padding">
+                    </div>
+
+                    <div
+                        class="col-md-6 d-flex flex-column justify-content-center">
+                        <h2 class="algorithm-title">Binary Search <span
+                                class="highlight">ALGORITHM</span></h2>
+                        <p>
+                            Binary search is an efficient algorithm to find an
+                            item
+                            in a sorted list. It repeatedly divides the search
+                            range
+                            in half, comparing the target with the middle
+                            element.
+                        </p>
+                        <div class="d-flex flex-wrap">
+                            <div class="box me-2">
+                                <strong>Time Complexity</strong><br>
+                                Best Case: O(1)<br>
+                                Worst/Average Case: O(log n)
+                            </div>
+                            <div class="box">
+                                <strong>Space Complexity</strong><br>
+                                Iterative Version: O(1)<br>
+                                Recursive Version: O(log n)
+                            </div>
+                        </div>
+                        <button class="btn btn-primary mt-3 text-center"
+                            onclick="window.location.href='Binarysearch.html';">
+                            LET'S VISUALIZE! 📊
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Linear Search Section -->
+            <div class="row algorithm-section p-5 mb-5   bg-body-secondary">
+                <div class="col-md-6 d-none d-lg-block">
+                    <img src="./assests/Linearsearch.png"
+                        alt="Linear Search Image" class="image_padding">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <h2 class="algorithm-title">Linear Search <span
+                            class="highlight">ALGORITHM</span></h2>
+                    <p>
+                        Linear search is a simple algorithm that sequentially
+                        checks each element in a list until the target value is
+                        found or the list ends. It works for unsorted data.
+                    </p>
+                    <div class="d-flex flex-wrap">
+                        <div class="box me-2">
+                            <strong>Time Complexity</strong><br>
+                            Best Case: O(1)<br>
+                            Worst/Average Case: O(n)
+                        </div>
+                        <div class="box">
+                            <strong>Space Complexity</strong><br>
+                            Iterative Version: O(1)
+                        </div>
+                    </div>
+                    <button class="btn btn-primary mt-3"
+                        onclick="window.location.href='Linearsearch.html';">LET'S
+                        VISUALIZE! 📊</button>
+                </div>
+            </div>
+            <!-- Sorting -->
+            <!-- Selection Sort Section -->
+
+            <div class="header">
+                <h1>Sorting <span>Algorithm</span></h1>
+                <p class="subheading">Visualize and understand various searching
+                    techniques step-by-step.</p>
+            </div>
+            <div class="row algorithm-section p-5 mb-5 bg-body-secondary">
+                <div class="col-md-6 d-none d-lg-block">
+                    <img src="./assests/Selectionsort.png"
+                        alt="Selection Sort Image" class="image_padding">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <h2 class="algorithm-title">Selection Sort <span
+                            class="highlight">ALGORITHM</span></h2>
+                    <p>
+                        Selection Sort is an in-place comparison sorting
+                        algorithm that divides the input list into two parts:
+                        the sorted and unsorted sublist.
+                        It repeatedly selects the smallest element from the
+                        unsorted part and moves it to the sorted part.
+                    </p>
+                    <div class="d-flex flex-wrap">
+                        <div class="box me-2">
+                            <strong>Time Complexity</strong><br>
+                            Best/Average/Worst Case: O(n<sup>2</sup>)
+                        </div>
+                        <div class="box">
+                            <strong>Space Complexity</strong><br>
+                            Iterative Version: O(1)
+                        </div>
+                    </div>
+                    <button class="btn btn-primary mt-3"
+                        onclick="window.location.href='Selectionsort.html';">LET'S
+                        VISUALIZE! 📊</button>
+                </div>
+            </div>
+
+            <!-- Insertion Sort Section -->
+            <div class="row algorithm-section p-5 mb-5 bg-body-secondary">
+                <div class="col-md-6 d-none d-lg-block">
+                    <img src="./assests/Insertionsort.png"
+                        alt="Insertion Sort Image" class="image_padding">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <h2 class="algorithm-title">Insertion Sort <span
+                            class="highlight">ALGORITHM</span></h2>
+                    <p>
+                        Insertion Sort is a simple sorting algorithm that builds
+                        the final sorted array one item at a time.
+                        It iterates through the list and inserts each element
+                        into its correct position in the sorted part of the
+                        array.
+                    </p>
+                    <div class="d-flex flex-wrap">
+                        <div class="box me-2">
+                            <strong>Time Complexity</strong><br>
+                            Best Case: O(n)<br>
+                            Worst/Average Case: O(n<sup>2</sup>)
+                        </div>
+                        <div class="box">
+                            <strong>Space Complexity</strong><br>
+                            Iterative Version: O(1)
+                        </div>
+                    </div>
+                    <button class="btn btn-primary mt-3"
+                        onclick="window.location.href='Insertionsort.html';">LET'S
+                        VISUALIZE! 📊</button>
+                </div>
+            </div>
+
+            <!-- Bubble Sort Section -->
+            <div class="row algorithm-section p-5 mb-5 bg-body-secondary">
+                <div class="col-md-6 d-none d-lg-block">
+                    <img src="./assests/Bubblesort.png" alt="Bubble Sort Image"
+                        class="image_padding">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <h2 class="algorithm-title">Bubble Sort <span
+                            class="highlight">ALGORITHM</span></h2>
+                    <p>
+                        Bubble Sort is a simple comparison-based algorithm that
+                        repeatedly steps through the list,
+                        compares adjacent elements, and swaps them if they are
+                        in the wrong order. This process is repeated
+                        until the list is sorted.
+                    </p>
+                    <div class="d-flex flex-wrap">
+                        <div class="box me-2">
+                            <strong>Time Complexity</strong><br>
+                            Best Case: O(n)<br>
+                            Worst/Average Case: O(n<sup>2</sup>)
+                        </div>
+                        <div class="box">
+                            <strong>Space Complexity</strong><br>
+                            Iterative Version: O(1)
+                        </div>
+                    </div>
+                    <button class="btn btn-primary mt-3"
+                        onclick="window.location.href='Bubblesort.html';">LET'S
+                        VISUALIZE! 📊</button>
+                </div>
+            </div>
+            <div class="header">
+                <h1>Graph Traversal <span>Algorithm</span></h1>
+                <p class="subheading">Visualize and understand various searching
+                    techniques step-by-step.</p>
+            </div>
+            <!-- Breadth-First Search (BFS) Section -->
+            <div class="row algorithm-section p-5 mb-5 bg-body-secondary">
+                <div class="col-md-6 d-none d-lg-block  ">
+                    <img src="./assests/BFS.png"
+                        alt="Breadth-First Search Image" width="590"
+                        class="image_padding">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <h2 class="algorithm-title">Breadth-First Search <span
+                            class="highlight">ALGORITHM</span></h2>
+                    <p>
+                        Breadth-First Search (BFS) is a graph traversal
+                        algorithm that starts from a selected node and explores
+                        all its neighbors at the current depth before moving to
+                        nodes at the next depth level.
+                    </p>
+                    <div class="d-flex flex-wrap">
+                        <div class="box me-2">
+                            <strong>Time Complexity</strong><br>
+                            O(V + E), where V is the number of vertices and E is
+                            the number of edges
+                        </div>
+                        <div class="box">
+                            <strong>Space Complexity</strong><br>
+                            O(V), where V is the number of vertices
+                        </div>
+                    </div>
+                    <button class="btn btn-primary mt-3"
+                        onclick="window.location.href='Bfs.html';">LET'S
+                        VISUALIZE! 📊</button>
+                </div>
+            </div>
+
+            <!-- Depth-First Search (DFS) Section -->
+            <div class="row algorithm-section p-5 mb-5 bg-body-secondary">
+                <div class="col-md-6 d-none d-lg-block">
+                    <img src="./assests/DFS.png" alt="Depth-First Search Image"
+                        width="600" class="image_padding graph_padding">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <h2 class="algorithm-title">Depth-First Search <span
+                            class="highlight">ALGORITHM</span></h2>
+                    <p>
+                        Depth-First Search (DFS) is a graph traversal algorithm
+                        that starts at a selected node and explores as far as
+                        possible along each branch before backtracking.
+                    </p>
+                    <div class="d-flex flex-wrap">
+                        <div class="box me-2">
+                            <strong>Time Complexity</strong><br>
+                            O(V + E), where V is the number of vertices and E is
+                            the number of edges
+                        </div>
+                        <div class="box">
+                            <strong>Space Complexity</strong><br>
+                            O(V), where V is the number of vertices
+                        </div>
+                    </div>
+                    <button class="btn btn-primary mt-3"
+                        onclick="window.location.href='Dfs.html';">LET'S
+                        VISUALIZE! 📊</button>
+                </div>
+            </div>
+
+            <!-- Bootstrap JS -->
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+            <script>
+                    AOS.init();
+                  </script>
+        </body>
+    </html>
