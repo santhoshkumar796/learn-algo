@@ -10,6 +10,45 @@
         <link rel="stylesheet" href="landing.css">
     </head>
     <body>
+        <div id="whatsapp-chat-widget">
+  <div class="wa-chat-box wa-chat-box-transition" id="wa-chat-box">
+    
+    <!-- Logo above welcome message -->
+    <div class="wa-chat-logo-container">
+      <img class="wa-chat-box-brand" src="./logo.png" />
+    </div>
+
+    <!-- Welcome Message -->
+    <div class="wa-chat-box-content-chat-welcome">
+      Hi there 👋<br>How can we help you?
+    </div>
+
+    <!-- Chat with us Button -->
+    <a class="wa-chat-box-content-send-btn" href="https://wa.me/1234567890" target="_blank">
+      <span class="wa-chat-box-content-send-btn-text">Chat with us</span>
+    </a>
+
+    <!-- Powered by -->
+    <div class="wa-chat-box-poweredby">
+        Powered By
+        <img src="./image.png" alt="ExeQute Logo" style="height: 20px;" />
+      </div>
+  </div>
+
+  <!-- Chat Bubble CTA -->
+  <div class="wa-chat-bubble" id="wa-chat-bubble">
+    <div class="wa-chat-bubble-close-button" onclick="document.getElementById('wa-chat-bubble').style.display='none'">×</div>
+    <div class="wa-chat-bubble-text" onclick="toggleChatBox()">How can we help?</div>
+  </div>
+
+  <!-- Chat Toggle Button -->
+  <div class="wa-widget-send-button" onclick="toggleChatBox()">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="32" height="32" />
+  </div>
+</div>
+
+<script src="./script.js"> </script>
+
         <div class="container-fluid min-vh-100">
             <div class="row min-vh-100">
                 <!-- Left Section -->
