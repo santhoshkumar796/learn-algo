@@ -1,5 +1,4 @@
-
-  const option = {
+ const option = {
     enabled: true,
     chatButtonSetting: {
       backgroundColor: '#25D366',
@@ -220,5 +219,29 @@
 
   function toggleChatBox() {
     const box = document.getElementById("wa-chat-box");
+    const bubble = document.getElementById("wa-chat-bubble");
+    
+    // Toggle chat box visibility
     box.classList.toggle("wa-chat-box-visible");
+    
+    // Check if chat box is now visible
+    if (box.classList.contains("wa-chat-box-visible")) {
+      // If chat box is visible, hide the bubble
+      bubble.style.display = "none";
+    } else {
+      // If chat box is hidden, show the bubble (if it wasn't manually closed)
+      if (bubble.style.display !== "none" || bubble.getAttribute("data-manually-closed") !== "true") {
+        bubble.style.display = "flex";
+        // Reset the manually closed flag
+        bubble.removeAttribute("data-manually-closed");
+      }
+    }
   }
+
+  // Modify the close button click handler to set a flag when manually closed
+  document.querySelector(".wa-chat-bubble-close-button").onclick = function(e) {
+    e.stopPropagation(); // Prevent triggering the parent's click event
+    const bubble = document.getElementById("wa-chat-bubble");
+    bubble.style.display = "none";
+    bubble.setAttribute("data-manually-closed", "true");
+  };
